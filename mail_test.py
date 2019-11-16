@@ -14,7 +14,7 @@ dag = DAG("email_test", default_args=default_args, schedule_interval=timedelta(d
 
 t1 = EmailOperator(
     task_id="send_mail", 
-    to='receiver@mail.com',
+    to='receivers@mail.com',
     subject='Test mail',
     html_content='<p> You have got mail! <p>',
     dag=dag)
