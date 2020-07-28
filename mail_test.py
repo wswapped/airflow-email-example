@@ -28,6 +28,6 @@ t2 = PythonOperator(
     task_id='failing_task',
     python_callable=error_function,
     email_on_failure=True,
-    emai='receivers@mail.com
+    emai='receivers@mail.com'
     dag=dag,
 )
